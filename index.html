@@ -93,7 +93,7 @@
   .stars{color:#e0b000; letter-spacing:2px}
   .quotes{display:grid; grid-template-columns:1fr 1fr; gap:18px; margin-top:16px}
   .quote{background:var(--white); border:1px solid rgba(51,64,54,.12); border-radius:16px; padding:18px; box-shadow:var(--shadow)}
-  /* Produktmodul */
+  /* modul */
   .product{
     display:grid; grid-template-columns:1fr 1fr; gap:28px; align-items:center;
     background:var(--white); border:1px solid rgba(51,64,54,.12); border-radius:18px; padding:28px; box-shadow:var(--shadow)
@@ -200,7 +200,7 @@
           <a class="btn btn-primary" href="#shop" onclick="focusProduct()">Jetzt kaufen</a>
           <a class="btn btn-ghost" href="#vorteile">Mehr erfahren</a>
         </div>
-        <div class="badges" aria-label="Produktvorteile">
+        <div class="badges" aria-label="vorteile">
           <span class="badge">🌿 Natürlich</span>
           <span class="badge">✨ Beruhigend</span>
           <span class="badge">🧪 Dermatologisch getestet</span>
@@ -243,7 +243,7 @@
     </div>
   </section>
 
-  <!-- Produkt / Shop -->
+  <!--  / Shop -->
   <section id="shop" class="section" aria-labelledby="shop-h">
     <div class="container">
       <h2 id="shop-h" style="font:600 22px Poppins; margin:0 0 16px">Scalm Anti-Dandruff Shampoo</h2>
@@ -362,7 +362,7 @@ function renderMini(){
     const row = document.createElement('div'); row.className='row';
     row.innerHTML = `
       <div style="display:flex; gap:10px; align-items:center">
-        <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExYmtlbGZ0andzMXFvdms4MTR0dWJ2ZXE1Nmh2bDYwa3RnejZuYzJ0NyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/8BOoddqB9u2ABhcKhV/giphy.gif" alt="Scalm Flasche Mini" width="38" height="38" loading="lazy">
+        <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExcmptaW5pYmU3OGR4aWQxYWRnaHJrMW9lcWFnMnk2MW50bDdrZW80eSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/DhjLsxLg6YtkDxxnWZ/giphy.gif" alt="Scalm Flasche Mini" width="38" height="38" loading="lazy">
         <div>
           <div style="font:600 14px Poppins">${it.name}</div>
           <div class="muted">${EUR(it.price)} · <label for="qty-${it.id}">Menge</label>
@@ -610,6 +610,7 @@ recalc();
 </script>
 </body>
 </html>
+
 
 
 
